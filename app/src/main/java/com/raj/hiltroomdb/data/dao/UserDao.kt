@@ -12,7 +12,7 @@ interface UserDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun insert(user: User)
 
-    @Query("SELECT * FROM User")
+    @Query("SELECT * FROM users")
     fun getAllWords(): List<User>
 
 }

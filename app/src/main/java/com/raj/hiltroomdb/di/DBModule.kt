@@ -16,8 +16,6 @@ object DBModule {
 
     lateinit var appDB: AppDB
 
-    private val executor = Executors.newSingleThreadExecutor()
-
     @Provides
     fun provideDatabase(
         @ApplicationContext appContext: Context
